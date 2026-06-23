@@ -1,0 +1,74 @@
+/* ================= Scroll suave que hace el desplazamiento suave ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= VARIABLES PERSONALIZADAS ================= */
+:root {
+  --color-azul-fuerte: #003D9B;
+  --color-azul-hover: #005EB2;
+  --color-celeste-badge: #D5E3FF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ================= CLASES DE UTILIDAD PARA COLORES ================= */
+/* Creamos nuestras propias clases integrables con Bootstrap */
+.text-brand { color: var(--color-azul-fuerte) !important; }
+.bg-brand { background-color: var(--color-azul-fuerte) !important; }
+.bg-badge { background-color: var(--color-celeste-badge) !important; }
+
+/* ================= BOTONES PERSONALIZADOS ================= */
+.btn-brand {
+  background-color: var(--color-azul-fuerte);
+  color: white;
+  border: none;
+}
+.btn-brand:hover {
+  background-color: var(--color-azul-hover);
+  color: white;
+}
+
+.btn-outline-brand {
+  color: var(--color-azul-fuerte);
+  border: 2px solid var(--color-azul-fuerte);
+}
+.btn-outline-brand:hover {
+  background-color: var(--color-celeste-badge);
+  color: var(--color-azul-fuerte);
+  border-color: var(--color-azul-fuerte);
+}
+
+/* ================= EFECTOS ESPECIALES (HERO) ================= */
+.bg-hero {
+  background: linear-gradient(180deg, #F8F9FB 0%, #FFFFFF 100%);
+}
+
+.img-placeholder {
+  background-color: #D5E3FF; /* Color temporal hasta que pongas tu foto */
+}
+
+.tarjeta-flotante {
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px); /* Efecto vidrio */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  max-width: 350px;
+}
+
+/* ================= LÍNEA CÓMO FUNCIONA ================= */
+.linea-conectora {
+  position: absolute;
+  top: 32px;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background-color: #C3C6D6;
+  z-index: 0;
+}
