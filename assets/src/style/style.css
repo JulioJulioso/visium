@@ -1,74 +1,222 @@
-/* ================= Scroll suave que hace el desplazamiento suave ================= */
-html {
-  scroll-behavior: smooth;
-}
+ :root{
+    --visium-blue-dark:#0d2c66;
+    --visium-blue:#13357a;
+    --visium-blue-deep:#0a2050;
+    --visium-blue-btn:#1d3f8c;
+    --visium-text-muted:#6b7280;
+  }
+  body{
+    background:#eef0f3;
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .auth-card{
+    width:100%;
+    max-width:1180px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(13,44,102,0.15);
+    background:#fff;
+  }
+  /* Panel izquierdo */
+  .panel-left{
+    background:linear-gradient(160deg, var(--visium-blue-dark) 0%, var(--visium-blue-deep) 100%);
+    color:#fff;
+    padding:48px 44px;
+    position:relative;
+    min-height:680px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+  .panel-left::before{
+    content:"";
+    position:absolute;
+    right:-60px;
+    bottom:-40px;
+    width:340px;
+    height:340px;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.08), transparent 70%);
+    pointer-events:none;
+  }
+  .brand-title{
+    font-weight:700;
+    font-size:1.9rem;
+    margin-bottom:6px;
+  }
+  .brand-subtitle{
+    color:#c3d0ec;
+    font-size:1.05rem;
+    margin-bottom:48px;
+  }
+  .feature-row{
+    display:flex;
+    gap:18px;
+    margin-bottom:32px;
+    position:relative;
+    z-index:2;
+  }
+  .feature-icon{
+    flex-shrink:0;
+    width:48px;
+    height:48px;
+    border-radius:10px;
+    background:#2f5fc9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.25rem;
+  }
+  .feature-title{
+    font-weight:700;
+    font-size:1.1rem;
+    margin-bottom:4px;
+  }
+  .feature-text{
+    color:#c3d0ec;
+    font-size:0.92rem;
+    line-height:1.4;
+    margin:0;
+  }
+  .device-illustration{
+    margin-top:auto;
+    opacity:0.18;
+    position:absolute;
+    right:24px;
+    bottom:90px;
+    width:260px;
+  }
+  .panel-left .footer-note{
+    color:#a9bbe0;
+    font-size:0.85rem;
+    border-top:1px solid rgba(255,255,255,0.15);
+    padding-top:18px;
+    margin-top:auto;
+    position:relative;
+    z-index:2;
+  }
+  /* Panel derecho */
+  .panel-right{
+    padding:48px 56px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .logo-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:28px;
+  }
+  .logo-row i{
+    font-size:1.7rem;
+    color:var(--visium-blue);
+  }
+  .logo-row span{
+    font-weight:700;
+    font-size:1.4rem;
+    color:#13284f;
+  }
+  .form-heading{
+    font-weight:700;
+    font-size:1.85rem;
+    color:#13284f;
+    margin-bottom:8px;
+  }
+  .form-subheading{
+    color:var(--visium-text-muted);
+    margin-bottom:32px;
+  }
+  .form-label-custom{
+    font-size:0.78rem;
+    font-weight:700;
+    letter-spacing:0.04em;
+    color:#374151;
+    text-transform:uppercase;
+  }
+  .input-group-custom .input-group-text{
+    background:#f3f4f6;
+    border-right:none;
+    color:#9ca3af;
+  }
+  .input-group-custom .form-control{
+    background:#f3f4f6;
+    border-left:none;
+    box-shadow:none;
+  }
+  .input-group-custom .form-control:focus{
+    background:#fff;
+    box-shadow:none;
+  }
+  .input-group-custom{
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    overflow:hidden;
+  }
+  .input-group-custom:focus-within{
+    border-color:var(--visium-blue);
+  }
+  .input-group-custom .form-control,
+  .input-group-custom .input-group-text{
+    border:none;
+  }
+  .link-forgot{
+    font-size:0.85rem;
+    color:var(--visium-blue);
+    text-decoration:none;
+  }
+  .link-forgot:hover{
+    text-decoration:underline;
+  }
+  .btn-login{
+    background:var(--visium-blue-btn);
+    border:none;
+    border-radius:10px;
+    padding:13px;
+    font-weight:600;
+    font-size:1.05rem;
+  }
+  .btn-login:hover{
+    background:#15316f;
+  }
+  .toggle-eye{
+    position:absolute;
+    right:14px;
+    top:50%;
+    transform:translateY(-50%);
+    background:none;
+    border:none;
+    color:#9ca3af;
+    cursor:pointer;
+  }
+  .form-check-label{
+    color:#374151;
+    font-size:0.92rem;
+  }
+  .bottom-row{
+    border-top:1px solid #e5e7eb;
+    padding-top:20px;
+    margin-top:28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:0.9rem;
+    color:#4b5563;
+  }
+  .bottom-row a{
+    color:var(--visium-blue);
+    font-weight:600;
+    text-decoration:none;
+  }
+  .bottom-row a:hover{
+    text-decoration:underline;
+  }
+  @media (max-width: 991.98px){
+    .panel-left{ min-height:auto; }
+    .device-illustration{ display:none; }
+  }
 
-/* ================= VARIABLES PERSONALIZADAS ================= */
-:root {
-  --color-azul-fuerte: #003D9B;
-  --color-azul-hover: #005EB2;
-  --color-celeste-badge: #D5E3FF;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-}
-
-/* ================= CLASES DE UTILIDAD PARA COLORES ================= */
-/* Creamos nuestras propias clases integrables con Bootstrap */
-.text-brand { color: var(--color-azul-fuerte) !important; }
-.bg-brand { background-color: var(--color-azul-fuerte) !important; }
-.bg-badge { background-color: var(--color-celeste-badge) !important; }
-
-/* ================= BOTONES PERSONALIZADOS ================= */
-.btn-brand {
-  background-color: var(--color-azul-fuerte);
-  color: white;
-  border: none;
-}
-.btn-brand:hover {
-  background-color: var(--color-azul-hover);
-  color: white;
-}
-
-.btn-outline-brand {
-  color: var(--color-azul-fuerte);
-  border: 2px solid var(--color-azul-fuerte);
-}
-.btn-outline-brand:hover {
-  background-color: var(--color-celeste-badge);
-  color: var(--color-azul-fuerte);
-  border-color: var(--color-azul-fuerte);
-}
-
-/* ================= EFECTOS ESPECIALES (HERO) ================= */
-.bg-hero {
-  background: linear-gradient(180deg, #F8F9FB 0%, #FFFFFF 100%);
-}
-
-.img-placeholder {
-  background-color: #D5E3FF; /* Color temporal hasta que pongas tu foto */
-}
-
-.tarjeta-flotante {
-  position: absolute;
-  bottom: 20px;
-  left: -20px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px); /* Efecto vidrio */
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  border-radius: 12px;
-  max-width: 350px;
-}
-
-/* ================= LÍNEA CÓMO FUNCIONA ================= */
-.linea-conectora {
-  position: absolute;
-  top: 32px;
-  left: 15%;
-  right: 15%;
-  height: 1px;
-  background-color: #C3C6D6;
-  z-index: 0;
-}
