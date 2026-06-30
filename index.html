@@ -52,13 +52,11 @@
       <h1 class="form-heading">Portal de Médico Tratante</h1>       
       <p class="form-subheading">Ingrese sus credenciales para acceder al panel clínico.</p>       
       
-      <!-- Se agregó el onsubmit para manejar la validación con JavaScript -->
       <form onsubmit="logueado(event)">         
         <div class="mb-3">           
           <label for="medico" class="form-label-custom mb-2">Id médico o correo electrónico</label>           
           <div class="input-group input-group-custom">             
             <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>             
-            <!-- Se unificó el id a "medico" y se añadió 'required' -->
             <input type="text" class="form-control" id="medico" placeholder="ingrese correo" required>           
           </div>         
         </div>         
@@ -70,9 +68,7 @@
           </div>           
           <div class="input-group input-group-custom">             
             <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>             
-            <!-- Se quitó el value predeterminado y se añadió 'required' -->
             <input type="password" class="form-control" id="password" placeholder="ingrese contraseña" required>             
-            <!-- Se removió el onclick de este botón para que no interfiera -->
             <button type="button" class="toggle-eye">               
               <i class="bi bi-eye" id="eyeIcon"></i>             
             </button>           
