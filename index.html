@@ -1,111 +1,105 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Visium Pro - Portal de Médico Tratante</title>
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-<link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
-
-<div class="auth-card">
-  <div class="row g-0">
-
-    <!-- Panel izquierdo -->
-    <div class="col-lg-5 panel-left">
-      <div>
-        <div class="brand-title">Visium Pro</div>
-        <div class="brand-subtitle">Plataforma Integral para Médicos Tratantes</div>
-      </div>
-
-      <div class="feature-row">
-        <div class="feature-icon"><i class="bi bi-shield-lock-fill"></i></div>
-        <div>
-          <div class="feature-title">Intercambio Seguro</div>
-          <p class="feature-text">Cifrado de extremo a extremo para el envío de expedientes y resultados oculares.</p>
-        </div>
-      </div>
-
-      <div class="feature-row">
-        <div class="feature-icon"><i class="bi bi-graph-up"></i></div>
-        <div>
-          <div class="feature-title">Seguimiento en Tiempo Real</div>
-          <p class="feature-text">Monitoree la evolución de sus pacientes derivados con reportes detallados.</p>
-        </div>
-      </div>
-
-      <div class="feature-row mb-0">
-        <div class="feature-icon"><i class="bi bi-bar-chart-fill"></i></div>
-        <div>
-          <div class="feature-title">Datos Estructurados</div>
-          <p class="feature-text">Acceso a tomografías y campimetrías en formatos de alta precisión clínica.</p>
-        </div>
-      </div>
-
-      <div class="footer-note">
-        Certificado bajo estándares internacionales de salud digital.
-      </div>
-    </div>
-
-    <!-- Panel derecho -->
-    <div class="col-lg-7 panel-right">
-      <div class="logo-row">
-        <i class="bi bi-eye-fill"></i>
-        <span>Visium</span>
-      </div>
-
-      <h1 class="form-heading">Portal de Médico Tratante</h1>
-      <p class="form-subheading">Ingrese sus credenciales para acceder al panel clínico.</p>
-
-      <form>
-        <div class="mb-3">
-          <label for="medicoId" class="form-label-custom mb-2">Id médico o correo electrónico</label>
-          <div class="input-group input-group-custom">
-            <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>
-            <input type="text" class="form-control" id="medicoId" placeholder="ej. MED-123456">
-          </div>
-        </div>
-
-        <div class="mb-3 position-relative">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <label for="password" class="form-label-custom mb-0">Contraseña</label>
-            <a href="#" class="link-forgot">¿Olvidó su contraseña?</a>
-          </div>
-          <div class="input-group input-group-custom">
-            <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
-            <input type="password" class="form-control" id="password" value="password">
-            <button type="button" class="toggle-eye" onclick="togglePassword()">
-              <i class="bi bi-eye" id="eyeIcon"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="form-check mb-4">
-          <input class="form-check-input" type="checkbox" id="remember">
-          <label class="form-check-label" for="remember">
-            Recordar mi sesión en este equipo
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-login w-100 text-white d-flex align-items-center justify-content-center gap-2">
-          Iniciar Sesión <i class="bi bi-box-arrow-in-right"></i>
-        </button>
-      </form>
-
-      <div class="bottom-row">
-        <div>¿No tiene una cuenta? <a href="#">Solicite acceso</a></div>
-        <div class="d-flex align-items-center gap-2 text-secondary">
-          <i class="bi bi-headset"></i> Soporte Técnico
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<script src="./js/script.js"></script>
-</body>
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Visium Pro - Portal de Médico Tratante</title> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="./assets/style/style.css"> 
+</head> 
+<body> 
+<div class="auth-card">   
+  <div class="row g-0">     
+    <!-- Panel izquierdo -->     
+    <div class="col-lg-5 panel-left">       
+      <div>         
+        <div class="brand-title">Visium Pro</div>         
+        <div class="brand-subtitle">Plataforma Integral para Médicos Tratantes</div>       
+      </div>       
+      <div class="feature-row">         
+        <div class="feature-icon"><i class="bi bi-shield-lock-fill"></i></div>         
+        <div>           
+          <div class="feature-title">Intercambio Seguro</div>           
+          <p class="feature-text">Cifrado de extremo a extremo para el envío de expedientes y resultados oculares.</p>         
+        </div>       
+      </div>       
+      <div class="feature-row">         
+        <div class="feature-icon"><i class="bi bi-graph-up"></i></div>         
+        <div>           
+          <div class="feature-title">Seguimiento en Tiempo Real</div>           
+          <p class="feature-text">Monitoree la evolución de sus pacientes derivados con reportes detallados.</p>         
+        </div>       
+      </div>       
+      <div class="feature-row mb-0">         
+        <div class="feature-icon"><i class="bi bi-bar-chart-fill"></i></div>         
+        <div>           
+          <div class="feature-title">Datos Estructurados</div>           
+          <p class="feature-text">Acceso a tomografías y campimetrías en formatos de alta precisión clínica.</p>         
+        </div>       
+      </div>       
+      <div class="footer-note">         
+        Certificado bajo estándares internacionales de salud digital.       
+      </div>     
+    </div>     
+    
+    <!-- Panel derecho -->     
+    <div class="col-lg-7 panel-right">       
+      <div class="logo-row">         
+        <i class="bi bi-eye-fill"></i>         
+        <span>Visium</span>       
+      </div>       
+      <h1 class="form-heading">Portal de Médico Tratante</h1>       
+      <p class="form-subheading">Ingrese sus credenciales para acceder al panel clínico.</p>       
+      
+      <!-- Se agregó el onsubmit para manejar la validación con JavaScript -->
+      <form onsubmit="logueado(event)">         
+        <div class="mb-3">           
+          <label for="medico" class="form-label-custom mb-2">Id médico o correo electrónico</label>           
+          <div class="input-group input-group-custom">             
+            <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>             
+            <!-- Se unificó el id a "medico" y se añadió 'required' -->
+            <input type="text" class="form-control" id="medico" placeholder="ingrese correo" required>           
+          </div>         
+        </div>         
+        
+        <div class="mb-3 position-relative">           
+          <div class="d-flex justify-content-between align-items-center mb-2">             
+            <label for="password" class="form-label-custom mb-0">Contraseña</label>             
+            <a href="#" class="link-forgot"> ¿Olvidó su contraseña?</a>           
+          </div>           
+          <div class="input-group input-group-custom">             
+            <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>             
+            <!-- Se quitó el value predeterminado y se añadió 'required' -->
+            <input type="password" class="form-control" id="password" placeholder="ingrese contraseña" required>             
+            <!-- Se removió el onclick de este botón para que no interfiera -->
+            <button type="button" class="toggle-eye">               
+              <i class="bi bi-eye" id="eyeIcon"></i>             
+            </button>           
+          </div>         
+        </div>         
+        
+        <div class="form-check mb-4">           
+          <input class="form-check-input" type="checkbox" id="remember">           
+          <label class="form-check-label" for="remember">             
+            Recordar mi sesión en este equipo           
+          </label>         
+        </div>         
+        
+        <button type="submit" class="btn btn-primary btn-login w-100 text-white d-flex align-items-center justify-content-center gap-2">           
+          Iniciar Sesión <i class="bi bi-box-arrow-in-right"></i>         
+        </button>       
+      </form>       
+      
+      <div class="bottom-row">         
+        <div> ¿No tiene una cuenta? <a href="#">Solicite acceso</a></div>         
+        <div class="d-flex align-items-center gap-2 text-secondary">           
+          <i class="bi bi-headset"></i> Soporte Técnico         
+        </div>       
+      </div>     
+    </div>   
+  </div> 
+</div> 
+<script src="./js/script.js"></script> 
+</body> 
 </html>
