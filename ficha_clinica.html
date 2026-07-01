@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visium - Ficha Clínica (Recepción)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/ficha_clinica.css">
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            
+            <h4 class="mb-4">Ficha Clínica del Paciente</h4>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-header card-header-custom d-flex justify-content-between align-items-center">
+                    <span><i class="bi bi-eyeglasses"></i> Resumen de Datos Clínicos y Receta</span>
+                    <span class="badge bg-success">Datos Recibidos</span>
+                </div>
+                <div class="card-body">
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Ojo</th>
+                                    <th>Esfera (SPH)</th>
+                                    <th>Cilindro (CYL)</th>
+                                    <th>Eje (AXIS)</th>
+                                    <th>Adición (ADD)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-blue">OD</td>
+                                    <td><span id="res-od-esf" class="empty-data">-</span></td>
+                                    <td><span id="res-od-cil" class="empty-data">-</span></td>
+                                    <td><span id="res-od-eje" class="empty-data">-</span></td>
+                                    <td rowspan="2" class="align-middle"><span id="res-add" class="empty-data">-</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">OI</td>
+                                    <td><span id="res-oi-esf" class="empty-data">-</span></td>
+                                    <td><span id="res-oi-cil" class="empty-data">-</span></td>
+                                    <td><span id="res-oi-eje" class="empty-data">-</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label class="form-label text-muted small text-uppercase fw-bold">Distancia Pupilar (DP)</label>
+                            <div class="p-2 border rounded bg-light">
+                                Lejos: <span id="res-dp-lejos" class="fw-bold empty-data">-</span> mm <br>
+                                Cerca: <span id="res-dp-cerca" class="fw-bold empty-data">-</span> mm
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-muted small text-uppercase fw-bold">Material Sugerido</label>
+                            <div class="p-2 border rounded bg-light">
+                                <span id="res-material" class="empty-data">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-header card-header-custom">
+                    Resumen de Evaluación y Plan de Tratamiento
+                </div>
+                <div class="card-body">
+                    <p id="res-observaciones" class="empty-data mb-0">Esperando recepción de indicaciones clínicas...</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-outline-secondary">Descartar</button>
+                <button class="btn btn-primary">Guardar Ficha Clínica</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
