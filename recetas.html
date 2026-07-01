@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta Óptica</title>
+    <link rel="stylesheet" href="assets/style/recetas.css">
+</head>
+<body>
+
+
+<div  class="paciente-card">
+
+    <div class="paciente-info">
+
+        <div class="foto-paciente">
+            <img src="assets/img/user.png" alt="Paciente">
+        </div>
+
+        <div class="datos-paciente">
+
+            <h3>Ricardo Mendoza</h3>
+
+            <p>ID: 12455901-K • 68 Años</p>
+
+        </div>
+
+    </div>
+
+    <div class="diagnostico">
+
+        <label>Diagnóstico Principal</label>
+
+        <p>Glaucoma de Ángulo Abierto / Catarata Senil OD</p>
+
+    </div>
+
+    <div class="ultima-visita">
+
+        <label>Última Visita</label>
+
+        <p>15 Oct 2025</p>
+
+    </div>
+
+    <div class="historial">
+
+        <button>Ver Historial Completo</button>
+
+    </div>
+
+</div>
+
+<!--=====================================
+        RECETA ÓPTICA
+======================================-->
+<div class="contenido-receta">
+
+<div class="receta-card">
+
+    <div class="titulo-receta">
+
+        <div>
+
+            <h2>Receta Óptica</h2>
+
+            <p>Ingrese la graduación correspondiente.</p>
+
+        </div>
+
+        <div class="botones-receta">
+
+            <button class="activo">Lejos</button>
+
+            <button>Cerca</button>
+
+        </div>
+
+    </div>
+
+    <table class="tabla-receta">
+
+        <thead>
+
+            <tr>
+
+                <th>Ojo</th>
+
+                <th>Esfera</th>
+
+                <th>Cilindro</th>
+
+                <th>Eje</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td><strong>OD</strong></td>
+
+                <td><input type="text"></td>
+
+                <td><input type="text"></td>
+
+                <td><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td><strong>OI</strong></td>
+
+                <td><input type="text"></td>
+
+                <td><input type="text"></td>
+
+                <td><input type="text"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="fila-receta">
+
+        <div class="grupo">
+
+            <label>Adición</label>
+
+            <input type="text">
+
+        </div>
+
+    </div>
+
+    <div class="fila-receta">
+
+        <div class="grupo">
+
+            <label>Distancia Pupilar Lejos</label>
+
+            <input type="text">
+
+        </div>
+
+        <div class="grupo">
+
+            <label>Distancia Pupilar Cerca</label>
+
+            <input type="text">
+
+        </div>
+
+    </div>
+
+    <div class="fila-receta">
+
+        <div class="grupo ancho-completo">
+
+            <label>Material</label>
+
+            <select>
+
+                <option>Seleccione...</option>
+
+                <option>CR-39</option>
+
+                <option>Policarbonato</option>
+
+                <option>Hi Index</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="fila-receta">
+
+        <div class="grupo ancho-completo">
+
+            <label>Observaciones</label>
+
+            <textarea rows="5"></textarea>
+
+        </div>
+
+    </div>
+
+
+
+</div> <!-- Fin receta-card -->
+
+<div class="panel-lateral">
+
+    <h3>Resumen</h3>
+
+    <div class="info-box">
+            <h4>Paciente</h4>
+        <p>Ricardo Mendoza</p>
+    </div>
+
+    <div class="info-box">
+        <h4>RUT</h4>
+        <p>12.345.678-9</p>
+    </div>
+
+    <div class="info-box">
+        <h4>Diagnóstico</h4>
+        <p>Glaucoma de Ángulo Abierto OD</p>
+    </div>
+
+    <div class="info-box">
+        <h4>Estado</h4>
+        <span class="estado">Lista para emitir</span>
+    </div>
+
+</div>
+
+</div> <!-- Fin contenido-receta -->
+
+
+
+<!--=====================================
+        FIRMA PROFESIONAL
+======================================-->
+
+<div class="firma-card">
+
+    <div class="firma-box">
+
+        <div class="linea-firma"></div>
+
+        <p>Firma del Profesional</p>
+
+    </div>
+
+    <div class="timbre-box">
+
+        <div class="circulo-timbre">
+
+            Timbre
+        </div>
+
+    </div>
+
+</div>
+
+<!--=====================================
+        BOTONES
+======================================-->
+
+<div class="acciones">
+
+    <button class="btn-guardar">
+
+        Guardar Borrador
+
+    </button>
+
+    <button class="btn-imprimir">
+
+        Emitir Receta (PDF / Imprimir)
+
+    </button>
+
+</div>
+</body>
+</html>
