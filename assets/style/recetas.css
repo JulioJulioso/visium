@@ -2,6 +2,9 @@
         CONTENEDOR PRINCIPAL
 ==========================================*/
 
+* {
+    box-sizing: border-box;
+}
 body{
     margin:0;
     padding:30px;
@@ -9,10 +12,6 @@ body{
     font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.contenedor{
-    width:1200px;
-    margin:auto;
-}
 
 /*=========================================
         TARJETA DEL PACIENTE
